@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FunTime — фан-сайт анархического сервера Minecraft: IP, как зайти, гайды</title>
+<meta name="description" content="Фан-сайт анархического сервера FunTime (mc.funtime.su): как зайти, как выжить на анархии, защита базы, рейды, аукцион, гайды для новичков и FAQ. Java Edition 1.8 – 1.21.">
+<meta name="theme-color" content="#0c1017">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<meta property="og:type" content="website">
+<meta property="og:title" content="FunTime — фан-сайт анархического сервера Minecraft">
+<meta property="og:description" content="IP mc.funtime.su · Java 1.8 – 1.21 · анархия без привата: рейды, кланы, аукцион. Как зайти, что делать в первую ночь и ответы на частые вопросы.">
+<meta property="og:image" content="assets/og.png">
+<meta property="og:locale" content="ru_RU">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Handjet:wght@400;700;900&family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Перейти к содержимому</a>
+
+<header class="site-header" id="siteHeader">
+  <div class="container site-header__inner">
+    <a class="brand" href="#top" aria-label="FunTime — на главную">
+      <img class="brand__mark" src="assets/favicon.png" alt="" width="32" height="32">
+      <span class="brand__text">FunTime</span>
+      <span class="brand__tag">fan</span>
+    </a>
+
+    <nav class="nav" id="nav" aria-label="Основная навигация">
+      <a class="nav__link" href="#about">О сервере</a>
+      <a class="nav__link" href="#modes">Внутри</a>
+      <a class="nav__link" href="#gallery">Галерея</a>
+      <a class="nav__link" href="#connect">Как зайти</a>
+      <a class="nav__link" href="#guides">Гайды</a>
+      <a class="nav__link" href="#faq">FAQ</a>
+      <button class="btn btn--green btn--sm nav__cta" type="button" data-copy="mc.funtime.su">
+        <svg class="icon" viewBox="0 0 16 16" aria-hidden="true"><rect x="3.2" y="2.6" width="9.6" height="11.8" rx="1.2" fill="none" stroke="currentColor" stroke-width="1.6"/><rect x="5.8" y="1" width="4.4" height="3.2" rx="1" fill="currentColor"/></svg>
+        Скопировать IP
+      </button>
+    </nav>
+
+    <button class="burger" id="burger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="nav">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="progress" id="progress" aria-hidden="true"></div>
+</header>
+
+<main id="main">
+
+  <!-- ===================== HERO ===================== -->
+  <section class="hero" id="top">
+    <div class="hero__media" aria-hidden="true">
+      <img src="assets/hero.png" alt="" width="1920" height="1080" fetchpriority="high">
+    </div>
+
+    <div class="container hero__inner">
+      <p class="badge">
+        <span class="badge__dot" aria-hidden="true"></span>
+        фан-сайт · не связан с администрацией проекта
+      </p>
+
+      <h1 class="hero__title">FunTime</h1>
+      <p class="hero__tagline">Анархия · Рейды · PvP без правил</p>
+      <p class="hero__lead">
+        Один из самых шумных анархических проектов рунета: рейды, кланы и PvP
+        без правил — и экономика, в которой ресурсы реально чего-то стоят.
+      </p>
+
+      <div class="hero__cta">
+        <div class="ipcard">
+          <div class="ipcard__label">IP сервера · Java Edition</div>
+          <div class="ipcard__row">
+            <code class="ipcard__value" id="serverIp">mc.funtime.su</code>
+            <button class="btn btn--green" type="button" data-copy="mc.funtime.su">
+              <svg class="icon" viewBox="0 0 16 16" aria-hidden="true"><rect x="3.2" y="2.6" width="9.6" height="11.8" rx="1.2" fill="none" stroke="currentColor" stroke-width="1.6"/><rect x="5.8" y="1" width="4.4" height="3.2" rx="1" fill="currentColor"/></svg>
+              Скопировать
+            </button>
+          </div>
+          <p class="ipcard__hint">Ещё адрес: <code>play.funtime.su</code> · порт по умолчанию <code>25565</code></p>
+        </div>
+
+        <div class="hero__actions">
+          <a class="btn btn--ghost" href="#connect">
+            Как зайти — 3 шага
+            <svg class="icon" viewBox="0 0 16 16" aria-hidden="true"><path d="M2 8h9l-3.5-3.5 1.4-1.4L15 8l-6.1 4.9-1.4-1.4L11 8H2z" fill="currentColor"/></svg>
+          </a>
+          <a class="btn btn--ghost" href="#modes">Что внутри</a>
+        </div>
+      </div>
+
+      <dl class="hero__stats">
+        <div><dt>Версии</dt><dd>1.8 – 1.21</dd></div>
+        <div><dt>Онлайн</dt><dd>≈ 2 000</dd></div>
+        <div><dt>Платформа</dt><dd>Java</dd></div>
+      </dl>
+      <p class="hero__note">Цифры онлайна — из открытых мониторингов, они меняются каждый день.</p>
+    </div>
+  </section>
+
+  <!-- ===================== STATS STRIP ===================== -->
+  <section class="strip" aria-label="Коротко о сервере">
+    <div class="container strip__inner">
+      <div class="strip__item">
+        <span class="strip__num">24/7</span>
+        <span class="strip__label">сервер работает круглый год</span>
+      </div>
+      <div class="strip__item">
+        <span class="strip__num">1.8 – 1.21</span>
+        <span class="strip__label">заходи с любого клиента Java</span>
+      </div>
+      <div class="strip__item">
+        <span class="strip__num">0 ₽</span>
+        <span class="strip__label">вход свободный, без лаунчера</span>
+      </div>
+      <div class="strip__item">
+        <span class="strip__num">RU</span>
+        <span class="strip__label">сообщество и чат на русском</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== ABOUT ===================== -->
+  <section class="section" id="about">
+    <div class="container about">
+      <div class="about__text">
+        <h2 class="section__title"><span class="section__num">01</span> Что такое FunTime</h2>
+        <p>
+          FunTime — крупный русскоязычный анархический проект. Отдельных режимов нет:
+          весь сервер про анархию. Привата почти нет — базу прячут, а не защищают,
+          зато есть кланы, войны, аукцион и экономика, в которой ресурсы реально
+          чего-то стоят.
+        </p>
+        <p>
+          Всё держится на трёх вещах: найти место, спрятать базу и не потерять её
+          в первый же рейд. Никаких отдельных режимов — зашёл и сразу в бой
+          за территорию, лут и репутацию.
+        </p>
+        <p class="muted">
+          Этот сайт — фанатский гид. Мы не администрируем сервер, не выдаём привилегии
+          и не продаём ключи. Все официальные вопросы — к администрации проекта.
+        </p>
+      </div>
+
+      <aside class="about__card card">
+        <h3 class="card__title">Что внутри</h3>
+        <ul class="ticks">
+          <li>Анархия без привата и почти без правил</li>
+          <li>Рейды на чужие базы и клановые войны</li>
+          <li>Кровать как точка возрождения</li>
+          <li>Аукцион и живая экономика</li>
+          <li>Поиск чужих баз по следам и координатам</li>
+          <li>Ивенты и сезонные обновления</li>
+        </ul>
+        <p class="about__card-foot">Список собран по рассказам игроков и открытым описаниям — детали могут отличаться.</p>
+      </aside>
+    </div>
+  </section>
+
+  <!-- ===================== MODES ===================== -->
+  <section class="section section--alt" id="modes">
+    <div class="container">
+      <div class="section__head">
+        <h2 class="section__title"><span class="section__num">02</span> Что тебя ждёт</h2>
+        <p class="section__sub">Отдельных режимов у проекта нет — FunTime целиком про анархию. Вот из чего она складывается.</p>
+      </div>
+
+      <div class="modes">
+        <article class="mode card">
+          <img class="mode__icon" src="assets/icons/anarchy.png" alt="" width="64" height="64" loading="lazy">
+          <h3 class="mode__title">Анархия<span class="mode__tag">без правил</span></h3>
+          <p class="mode__text">Единственный режим проекта. Что не спрятал — потерял: за забором никто не следит, а помощь не придёт.</p>
+        </article>
+
+        <article class="mode card">
+          <img class="mode__icon" src="assets/icons/grief.png" alt="" width="64" height="64" loading="lazy">
+          <h3 class="mode__title">Гриф и рейды<span class="mode__tag">хардкор</span></h3>
+          <p class="mode__text">Чужие базы находят, вскрывают и выносят. Умение рейдить здесь ценится выше красивого дома.</p>
+        </article>
+
+        <article class="mode card">
+          <img class="mode__icon" src="assets/icons/base.png" alt="" width="64" height="64" loading="lazy">
+          <h3 class="mode__title">Базы и кровати<span class="mode__tag">выживание</span></h3>
+          <p class="mode__text">Кровать — твоя точка возрождения. Поставил, запомнил координаты и никому их не показывай.</p>
+        </article>
+
+        <article class="mode card">
+          <img class="mode__icon" src="assets/icons/farm.png" alt="" width="64" height="64" loading="lazy">
+          <h3 class="mode__title">Фарм и ресурсы<span class="mode__tag">экономика</span></h3>
+          <p class="mode__text">Шахты и фермы кормят рейды. Ресурсы — местная валюта: на них покупают снаряжение и сбывают лут.</p>
+        </article>
+
+        <article class="mode card">
+          <img class="mode__icon" src="assets/icons/scout.png" alt="" width="64" height="64" loading="lazy">
+          <h3 class="mode__title">Разведка<span class="mode__tag">внимательность</span></h3>
+          <p class="mode__text">Найти чужую базу — половина победы. Следы крафта, срубленные деревья и странные координаты выдают всё.</p>
+        </article>
+
+        <article class="mode card">
+          <img class="mode__icon" src="assets/icons/clan.png" alt="" width="64" height="64" loading="lazy">
+          <h3 class="mode__title">Кланы и войны<span class="mode__tag">с друзьями</span></h3>
+          <p class="mode__text">Одному на анархии тяжело: союзы дают защиту, но предают чаще, чем враги. Выбирай состав аккуратно.</p>
+        </article>
+      </div>
+
+      <p class="modes__note">Описание общее, «как устроена анархия»: конкретные команды, механики и ивенты сверяй на самом сервере — их правят чаще, чем любые гайды.</p>
+    </div>
+  </section>
+
+  <!-- ===================== GALLERY ===================== -->
+  <section class="section" id="gallery">
+    <div class="container">
+      <div class="section__head">
+        <h2 class="section__title"><span class="section__num">03</span> Как это выглядит</h2>
+        <p class="section__sub">Иллюстрации в пиксель-стиле, нарисованные специально для сайта: база, рейд, кровать, рынок, карта и руины.</p>
+      </div>
+
+      <div class="gallery">
+        <figure class="shot">
+          <button class="shot__btn" type="button" data-full="assets/gallery/base.png" data-caption="База: сейф из обсидиана в глубине">
+            <img src="assets/gallery/base.png" alt="Пиксель-арт: подземная база, обсидиановый сейф, два сундука, факелы и лава" width="1440" height="810" loading="lazy">
+            <span class="shot__zoom">увеличить</span>
+          </button>
+          <figcaption>База: сейф из обсидиана в глубине</figcaption>
+        </figure>
+
+        <figure class="shot">
+          <button class="shot__btn" type="button" data-full="assets/gallery/raid.png" data-caption="Рейд: стены не спасают">
+            <img src="assets/gallery/raid.png" alt="Пиксель-арт: взрыв у каменной стены, разлетающиеся блоки и ТНТ" width="1440" height="810" loading="lazy">
+            <span class="shot__zoom">увеличить</span>
+          </button>
+          <figcaption>Рейд: стены не спасают</figcaption>
+        </figure>
+
+        <figure class="shot">
+          <button class="shot__btn" type="button" data-full="assets/gallery/bed.png" data-caption="Кровать — точка возрождения">
+            <img src="assets/gallery/bed.png" alt="Пиксель-арт: комната с кроватью, сундуком, окном в ночь и лампой" width="1440" height="810" loading="lazy">
+            <span class="shot__zoom">увеличить</span>
+          </button>
+          <figcaption>Кровать — точка возрождения</figcaption>
+        </figure>
+
+        <figure class="shot">
+          <button class="shot__btn" type="button" data-full="assets/gallery/market.png" data-caption="Аукцион и торговля">
+            <img src="assets/gallery/market.png" alt="Пиксель-арт: две рыночные палатки с сундуками и висящими предметами" width="1440" height="810" loading="lazy">
+            <span class="shot__zoom">увеличить</span>
+          </button>
+          <figcaption>Аукцион и торговля</figcaption>
+        </figure>
+
+        <figure class="shot">
+          <button class="shot__btn" type="button" data-full="assets/gallery/map.png" data-caption="Разведка: карта и координаты">
+            <img src="assets/gallery/map.png" alt="Пиксель-арт: карта местности в стиле Minecraft с рекой, лесом и красным крестом" width="1440" height="810" loading="lazy">
+            <span class="shot__zoom">увеличить</span>
+          </button>
+          <figcaption>Разведка: карта и координаты</figcaption>
+        </figure>
+
+        <figure class="shot">
+          <button class="shot__btn" type="button" data-full="assets/gallery/ruins.png" data-caption="Анархия на закате">
+            <img src="assets/gallery/ruins.png" alt="Пиксель-арт: руины крепости на закате, лава и летящие птицы" width="1440" height="810" loading="lazy">
+            <span class="shot__zoom">увеличить</span>
+          </button>
+          <figcaption>Анархия на закате</figcaption>
+        </figure>
+      </div>
+
+      <p class="modes__note">Это иллюстрации, а не скриншоты с сервера: настоящие базы игроков выглядят скромнее, зато живут дольше.</p>
+    </div>
+  </section>
+
+  <!-- ===================== CONNECT ===================== -->
+  <section class="section section--alt" id="connect">
+    <div class="container connect">
+      <div class="connect__steps">
+        <h2 class="section__title"><span class="section__num">04</span> Как зайти</h2>
+        <ol class="steps">
+          <li class="step">
+            <span class="step__num" aria-hidden="true">1</span>
+            <div>
+              <h3 class="step__title">Запусти Java Edition</h3>
+              <p>Подойдёт любая версия <strong>1.8 – 1.21</strong>. Пиратка или лицензия — решаешь ты, но лицензия избавит от части проблем с чатом.</p>
+            </div>
+          </li>
+          <li class="step">
+            <span class="step__num" aria-hidden="true">2</span>
+            <div>
+              <h3 class="step__title">Открой «Сетевая игра»</h3>
+              <p>Кнопка <em>Multiplayer</em> на главном экране → «Добавить сервер». Имя — любое, например <em>FunTime</em>.</p>
+            </div>
+          </li>
+          <li class="step">
+            <span class="step__num" aria-hidden="true">3</span>
+            <div>
+              <h3 class="step__title">Вставь адрес</h3>
+              <p><code>mc.funtime.su</code> — и жми «Готово», затем «Подключиться». Порт обычно не нужен.</p>
+            </div>
+          </li>
+        </ol>
+
+        <div class="connect__callout">
+          <svg class="icon icon--lg" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 1 15 14H1z" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="M8 5.5v4" stroke="currentColor" stroke-width="1.6"/><path d="M8 11.2v1" stroke="currentColor" stroke-width="1.6"/></svg>
+          <p><strong>С телефона не зайдёшь.</strong> FunTime — Java-сервер. Для Bedrock-версии проекта существует отдельный адрес (по данным мониторингов — <code>funtime-be.su</code>), но это уже другой клиент и другие правила.</p>
+        </div>
+      </div>
+
+      <aside class="connect__panel card">
+        <h3 class="card__title">Чек-лист перед входом</h3>
+        <ul class="ticks">
+          <li>Ник без запрещённых символов и пробелов</li>
+          <li>Скины грузятся с сервера, но не всегда</li>
+          <li>Чат на сервере модерируется — за оскорбления дают мут</li>
+          <li>Первые минуты — спавн и поиск места под базу подальше от чужих глаз</li>
+        </ul>
+        <div class="copyline">
+          <code>mc.funtime.su</code>
+          <button class="btn btn--green btn--sm" type="button" data-copy="mc.funtime.su">Скопировать</button>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- ===================== GUIDES ===================== -->
+  <section class="section" id="guides">
+    <div class="container">
+      <div class="section__head">
+        <h2 class="section__title"><span class="section__num">05</span> Гайды для новичков</h2>
+        <p class="section__sub">Практика, а не теория: что делать в первую ночь, куда прятать базу и как не потерять лут в рейде.</p>
+      </div>
+
+      <div class="guides">
+        <details class="guide card">
+          <summary class="guide__summary">
+            <span class="guide__title">Первые 30 минут на анархии</span>
+            <span class="guide__chev" aria-hidden="true"></span>
+          </summary>
+          <div class="guide__body">
+            <ul>
+              <li>Не стройся у спавна: там ищут новичков. Отойди на 3–5 тысяч блоков или уйди по координатной сетке вбок.</li>
+              <li>Первым делом — кровать, сундук и каменные инструменты. Дерево ищи до первых сумерек.</li>
+              <li>Запомни координаты базы, но не пиши их в общий чат и не стримь экран с F3.</li>
+              <li>Найди ближайший безопасный портал в хаб — путь назад должен быть коротким.</li>
+            </ul>
+          </div>
+        </details>
+
+        <details class="guide card">
+          <summary class="guide__summary">
+            <span class="guide__title">Как защитить базу без привата</span>
+            <span class="guide__chev" aria-hidden="true"></span>
+          </summary>
+          <div class="guide__body">
+            <ul>
+              <li>Сейф делай из обсидиана: он держит взрыв и не даёт быстро прокопаться.</li>
+              <li>Разделяй ценности: часть ресурсов — в тайнике поблизости, часть — в основном схроне.</li>
+              <li>Не ставь кровать внутри сейфа: она подсказывает, где ты появляешься.</li>
+              <li>Перед выходом из игры убирай всё ценное — сундук на поверхности считается «приглашением».</li>
+            </ul>
+          </div>
+        </details>
+
+        <details class="guide card">
+          <summary class="guide__summary">
+            <span class="guide__title">Как заработать на аукционе</span>
+            <span class="guide__chev" aria-hidden="true"></span>
+          </summary>
+          <div class="guide__body">
+            <ul>
+              <li>Смотри, чего не хватает на аукционе в часы пик, — обычно это ресурсы для крафта (кварц, незер, шерсть).</li>
+              <li>Скупай дешёвые лоты и перепродавай с наценкой 20–30%, а не в 5 раз.</li>
+              <li>Ивенты и квесты часто дают предметы, которые потом дорого уходят новичкам.</li>
+              <li>Цену ставь на 1–2 единицы ниже ближайшего конкурента — так лот смотрят чаще.</li>
+            </ul>
+          </div>
+        </details>
+
+        <details class="guide card">
+          <summary class="guide__summary">
+            <span class="guide__title">Рейд: как не потерять всё</span>
+            <span class="guide__chev" aria-hidden="true"></span>
+          </summary>
+          <div class="guide__body">
+            <ul>
+              <li>Ходи вдвоём: один ломает и собирает, второй смотрит по сторонам.</li>
+              <li>Бери кровать и запасной сет — рейд почти всегда заканчивается смертью.</li>
+              <li>Не тащи весь лут в инвентаре: ценности сбрасывай в тайник до возвращения.</li>
+              <li>После рейда меняй точку возрождения и не возвращайся на место сразу.</li>
+            </ul>
+          </div>
+        </details>
+      </div>
+
+      <p class="modes__note">Эксплойтов, дюпов и «секретных методов» здесь нет: такие вещи ломают экономику сервера и заканчиваются баном.</p>
+    </div>
+  </section>
+
+  <!-- ===================== FAQ ===================== -->
+  <section class="section section--alt" id="faq">
+    <div class="container">
+      <div class="section__head">
+        <h2 class="section__title"><span class="section__num">06</span> Частые вопросы</h2>
+      </div>
+
+      <div class="faq">
+        <details class="faq__item" name="faq">
+          <summary>Какой IP у сервера FunTime?</summary>
+          <p><code>mc.funtime.su</code>. Дополнительно работает <code>play.funtime.su</code>, порт по умолчанию — <code>25565</code>.</p>
+        </details>
+        <details class="faq__item" name="faq">
+          <summary>Можно ли зайти с телефона?</summary>
+          <p>Основной FunTime — Java Edition, с телефона напрямую не зайти. У проекта есть отдельный Bedrock-адрес, но это другой клиент и другой список механик.</p>
+        </details>
+        <details class="faq__item" name="faq">
+          <summary>Какая версия Minecraft нужна?</summary>
+          <p>Поддерживается диапазон 1.8 – 1.21. Если не понимаешь, какую взять — бери 1.20.1 или 1.21: больше всего плагинов и меньше сюрпризов.</p>
+        </details>
+        <details class="faq__item" name="faq">
+          <summary>Это бесплатно?</summary>
+          <p>Вход свободный. На проекте есть донат-привилегии, но играть и развиваться можно без них — просто медленнее.</p>
+        </details>
+        <details class="faq__item" name="faq">
+          <summary>Что делать, если сервер не грузится?</summary>
+          <p>Проверь адрес и версию клиента, отключи VPN и сторонние моды. Если не помогает — сервер могли перезапускать: подожди пару минут или сверься с официальными каналами проекта.</p>
+        </details>
+        <details class="faq__item" name="faq">
+          <summary>Это официальный сайт?</summary>
+          <p>Нет. Это фанатский гид, сделанный игроками. Он не связан с администрацией FunTime и Mojang, не выдаёт привилегии и не принимает платежи.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="container footer__inner">
+    <div class="footer__brand">
+      <img src="assets/favicon.png" alt="" width="28" height="28">
+      <span>FunTime · fan site</span>
+    </div>
+    <p class="footer__text">
+      Неофициальный фанатский сайт. Не связан с администрацией FunTime и Mojang AB.
+      Minecraft — торговая марка Mojang AB. Данные об IP, версиях и механиках собраны
+      из открытых источников и могут устареть.
+    </p>
+    <nav class="footer__links" aria-label="Полезные ссылки">
+      <a href="https://funtime.su" rel="noopener noreferrer nofollow" target="_blank">Официальный сайт</a>
+      <a href="https://forum.funtime.su" rel="noopener noreferrer nofollow" target="_blank">Форум проекта</a>
+      <a href="#top">Наверх</a>
+    </nav>
+  </div>
+</footer>
+
+<div class="lightbox" id="lightbox" hidden>
+  <button class="lightbox__close" type="button" aria-label="Закрыть просмотр">
+    <svg class="icon" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 3l10 10M13 3L3 13" stroke="currentColor" stroke-width="2" fill="none"/></svg>
+  </button>
+  <button class="lightbox__nav lightbox__nav--prev" type="button" data-step="-1" aria-label="Предыдущая иллюстрация">
+    <svg class="icon" viewBox="0 0 16 16" aria-hidden="true"><path d="M10 2L4 8l6 6" stroke="currentColor" stroke-width="2" fill="none"/></svg>
+  </button>
+  <figure class="lightbox__figure">
+    <img id="lightboxImg" src="assets/gallery/base.png" alt="">
+    <figcaption class="lightbox__cap" id="lightboxCap"></figcaption>
+  </figure>
+  <button class="lightbox__nav lightbox__nav--next" type="button" data-step="1" aria-label="Следующая иллюстрация">
+    <svg class="icon" viewBox="0 0 16 16" aria-hidden="true"><path d="M6 2l6 6-6 6" stroke="currentColor" stroke-width="2" fill="none"/></svg>
+  </button>
+</div>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="js/app.js" defer></script>
+</body>
+</html>
